@@ -1,0 +1,446 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/usuario/ontologies/2026/8/untitled-ontology-24/"
+     xml:base="http://www.semanticweb.org/usuario/ontologies/2026/8/untitled-ontology-24/"
+     xmlns:dco="http://www.drone-crawler-ontology/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/8/untitled-ontology-24"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.drone-crawler-ontology/actsOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.drone-crawler-ontology/actsOn">
+        <rdfs:domain rdf:resource="http://www.drone-crawler-ontology/EntidadeTecnologica"/>
+        <rdfs:range rdf:resource="http://www.drone-crawler-ontology/EntidadeTecnologica"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/hasComponent -->
+
+    <owl:ObjectProperty rdf:about="http://www.drone-crawler-ontology/hasComponent">
+        <rdfs:domain rdf:resource="http://www.drone-crawler-ontology/Sistema"/>
+        <rdfs:range rdf:resource="http://www.drone-crawler-ontology/Componente"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/hasSubsystem -->
+
+    <owl:ObjectProperty rdf:about="http://www.drone-crawler-ontology/hasSubsystem">
+        <rdfs:domain rdf:resource="http://www.drone-crawler-ontology/Sistema"/>
+        <rdfs:range rdf:resource="http://www.drone-crawler-ontology/Sistema"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/operatesThrough -->
+
+    <owl:ObjectProperty rdf:about="http://www.drone-crawler-ontology/operatesThrough">
+        <rdfs:domain rdf:resource="http://www.drone-crawler-ontology/EntidadeTecnologica"/>
+        <rdfs:range rdf:resource="http://www.drone-crawler-ontology/Mecanismo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/performsFunction -->
+
+    <owl:ObjectProperty rdf:about="http://www.drone-crawler-ontology/performsFunction">
+        <rdfs:domain rdf:resource="http://www.drone-crawler-ontology/EntidadeTecnologica"/>
+        <rdfs:range rdf:resource="http://www.drone-crawler-ontology/FuncaoTecnologica"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.drone-crawler-ontology/Camera -->
+
+    <owl:Class rdf:about="http://www.drone-crawler-ontology/Camera">
+        <rdfs:subClassOf rdf:resource="http://www.drone-crawler-ontology/Componente"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/Componente -->
+
+    <owl:Class rdf:about="http://www.drone-crawler-ontology/Componente">
+        <rdfs:subClassOf rdf:resource="http://www.drone-crawler-ontology/EntidadeTecnologica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/Crawler -->
+
+    <owl:Class rdf:about="http://www.drone-crawler-ontology/Crawler">
+        <rdfs:subClassOf rdf:resource="http://www.drone-crawler-ontology/Veiculo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/Drone -->
+
+    <owl:Class rdf:about="http://www.drone-crawler-ontology/Drone">
+        <rdfs:subClassOf rdf:resource="http://www.drone-crawler-ontology/Veiculo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/EntidadeTecnologica -->
+
+    <owl:Class rdf:about="http://www.drone-crawler-ontology/EntidadeTecnologica"/>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/FuncaoDeAdesao -->
+
+    <owl:Class rdf:about="http://www.drone-crawler-ontology/FuncaoDeAdesao">
+        <rdfs:subClassOf rdf:resource="http://www.drone-crawler-ontology/FuncaoTecnologica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/FuncaoDeLocomocao -->
+
+    <owl:Class rdf:about="http://www.drone-crawler-ontology/FuncaoDeLocomocao">
+        <rdfs:subClassOf rdf:resource="http://www.drone-crawler-ontology/FuncaoTecnologica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/FuncaoDePreparacaoDeSuperficie -->
+
+    <owl:Class rdf:about="http://www.drone-crawler-ontology/FuncaoDePreparacaoDeSuperficie">
+        <rdfs:subClassOf rdf:resource="http://www.drone-crawler-ontology/FuncaoTecnologica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/FuncaoTecnologica -->
+
+    <owl:Class rdf:about="http://www.drone-crawler-ontology/FuncaoTecnologica"/>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/Ima -->
+
+    <owl:Class rdf:about="http://www.drone-crawler-ontology/Ima">
+        <rdfs:subClassOf rdf:resource="http://www.drone-crawler-ontology/Componente"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/Mecanismo -->
+
+    <owl:Class rdf:about="http://www.drone-crawler-ontology/Mecanismo"/>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/MecanismoDeAdesaoMagnetica -->
+
+    <owl:Class rdf:about="http://www.drone-crawler-ontology/MecanismoDeAdesaoMagnetica">
+        <rdfs:subClassOf rdf:resource="http://www.drone-crawler-ontology/Mecanismo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/MecanismoDeMovimentoSobreSuperficie -->
+
+    <owl:Class rdf:about="http://www.drone-crawler-ontology/MecanismoDeMovimentoSobreSuperficie">
+        <rdfs:subClassOf rdf:resource="http://www.drone-crawler-ontology/Mecanismo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/Motor -->
+
+    <owl:Class rdf:about="http://www.drone-crawler-ontology/Motor">
+        <rdfs:subClassOf rdf:resource="http://www.drone-crawler-ontology/Componente"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/RoboSubmarino -->
+
+    <owl:Class rdf:about="http://www.drone-crawler-ontology/RoboSubmarino">
+        <rdfs:subClassOf rdf:resource="http://www.drone-crawler-ontology/Veiculo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/Roda -->
+
+    <owl:Class rdf:about="http://www.drone-crawler-ontology/Roda">
+        <rdfs:subClassOf rdf:resource="http://www.drone-crawler-ontology/Componente"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/Sistema -->
+
+    <owl:Class rdf:about="http://www.drone-crawler-ontology/Sistema">
+        <rdfs:subClassOf rdf:resource="http://www.drone-crawler-ontology/EntidadeTecnologica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/SistemaDeAdesao -->
+
+    <owl:Class rdf:about="http://www.drone-crawler-ontology/SistemaDeAdesao">
+        <rdfs:subClassOf rdf:resource="http://www.drone-crawler-ontology/Sistema"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/SistemaDeDeteccao -->
+
+    <owl:Class rdf:about="http://www.drone-crawler-ontology/SistemaDeDeteccao">
+        <rdfs:subClassOf rdf:resource="http://www.drone-crawler-ontology/Sistema"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/SistemaDeEmissao -->
+
+    <owl:Class rdf:about="http://www.drone-crawler-ontology/SistemaDeEmissao">
+        <rdfs:subClassOf rdf:resource="http://www.drone-crawler-ontology/Sistema"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/SistemaDeLocomocao -->
+
+    <owl:Class rdf:about="http://www.drone-crawler-ontology/SistemaDeLocomocao">
+        <rdfs:subClassOf rdf:resource="http://www.drone-crawler-ontology/Sistema"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/SistemaDePropulsao -->
+
+    <owl:Class rdf:about="http://www.drone-crawler-ontology/SistemaDePropulsao">
+        <rdfs:subClassOf rdf:resource="http://www.drone-crawler-ontology/Sistema"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/SistemaDroneCrawler -->
+
+    <owl:Class rdf:about="http://www.drone-crawler-ontology/SistemaDroneCrawler">
+        <rdfs:subClassOf rdf:resource="http://www.drone-crawler-ontology/Sistema"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/Veiculo -->
+
+    <owl:Class rdf:about="http://www.drone-crawler-ontology/Veiculo">
+        <rdfs:subClassOf rdf:resource="http://www.drone-crawler-ontology/EntidadeTecnologica"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.drone-crawler-ontology/Camera_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.drone-crawler-ontology/Camera_1">
+        <rdf:type rdf:resource="http://www.drone-crawler-ontology/Camera"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/Crawler_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.drone-crawler-ontology/Crawler_1">
+        <rdf:type rdf:resource="http://www.drone-crawler-ontology/Crawler"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/Drone_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.drone-crawler-ontology/Drone_1">
+        <rdf:type rdf:resource="http://www.drone-crawler-ontology/Drone"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/FuncaoAdesao_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.drone-crawler-ontology/FuncaoAdesao_1">
+        <rdf:type rdf:resource="http://www.drone-crawler-ontology/FuncaoDeAdesao"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/FuncaoLocomocao_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.drone-crawler-ontology/FuncaoLocomocao_1">
+        <rdf:type rdf:resource="http://www.drone-crawler-ontology/FuncaoDeLocomocao"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/FuncaoPreparacaoSuperficie_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.drone-crawler-ontology/FuncaoPreparacaoSuperficie_1">
+        <rdf:type rdf:resource="http://www.drone-crawler-ontology/FuncaoDePreparacaoDeSuperficie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/Ima_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.drone-crawler-ontology/Ima_1">
+        <rdf:type rdf:resource="http://www.drone-crawler-ontology/Ima"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/MecanismoAdesaoMagnetica_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.drone-crawler-ontology/MecanismoAdesaoMagnetica_1">
+        <rdf:type rdf:resource="http://www.drone-crawler-ontology/MecanismoDeAdesaoMagnetica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/MecanismoMovimentoSuperficie_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.drone-crawler-ontology/MecanismoMovimentoSuperficie_1">
+        <rdf:type rdf:resource="http://www.drone-crawler-ontology/MecanismoDeMovimentoSobreSuperficie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/Motor_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.drone-crawler-ontology/Motor_1">
+        <rdf:type rdf:resource="http://www.drone-crawler-ontology/Motor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/RoboSubmarino_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.drone-crawler-ontology/RoboSubmarino_1">
+        <rdf:type rdf:resource="http://www.drone-crawler-ontology/RoboSubmarino"/>
+        <dco:hasSubsystem rdf:resource="http://www.drone-crawler-ontology/SistemaDeteccaoNORM_1"/>
+        <dco:hasSubsystem rdf:resource="http://www.drone-crawler-ontology/SistemaEmissaoUltrassom_1"/>
+        <dco:hasSubsystem rdf:resource="http://www.drone-crawler-ontology/SistemaPropulsaoSubmarino_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/RodaSubmarino_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.drone-crawler-ontology/RodaSubmarino_1">
+        <rdf:type rdf:resource="http://www.drone-crawler-ontology/Roda"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/Roda_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.drone-crawler-ontology/Roda_1">
+        <rdf:type rdf:resource="http://www.drone-crawler-ontology/Roda"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/SistemaAdesao_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.drone-crawler-ontology/SistemaAdesao_1">
+        <rdf:type rdf:resource="http://www.drone-crawler-ontology/SistemaDeAdesao"/>
+        <dco:hasComponent rdf:resource="http://www.drone-crawler-ontology/Ima_1"/>
+        <dco:operatesThrough rdf:resource="http://www.drone-crawler-ontology/MecanismoAdesaoMagnetica_1"/>
+        <dco:performsFunction rdf:resource="http://www.drone-crawler-ontology/FuncaoAdesao_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/SistemaDeteccaoNORM_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.drone-crawler-ontology/SistemaDeteccaoNORM_1">
+        <rdf:type rdf:resource="http://www.drone-crawler-ontology/SistemaDeDeteccao"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/SistemaDroneCrawler_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.drone-crawler-ontology/SistemaDroneCrawler_1">
+        <rdf:type rdf:resource="http://www.drone-crawler-ontology/SistemaDroneCrawler"/>
+        <dco:hasSubsystem rdf:resource="http://www.drone-crawler-ontology/SistemaAdesao_1"/>
+        <dco:hasSubsystem rdf:resource="http://www.drone-crawler-ontology/SistemaLocomocao_1"/>
+        <dco:performsFunction rdf:resource="http://www.drone-crawler-ontology/FuncaoPreparacaoSuperficie_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/SistemaEmissaoUltrassom_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.drone-crawler-ontology/SistemaEmissaoUltrassom_1">
+        <rdf:type rdf:resource="http://www.drone-crawler-ontology/SistemaDeEmissao"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/SistemaLocomocao_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.drone-crawler-ontology/SistemaLocomocao_1">
+        <rdf:type rdf:resource="http://www.drone-crawler-ontology/SistemaDeLocomocao"/>
+        <dco:hasComponent rdf:resource="http://www.drone-crawler-ontology/Motor_1"/>
+        <dco:hasComponent rdf:resource="http://www.drone-crawler-ontology/Roda_1"/>
+        <dco:performsFunction rdf:resource="http://www.drone-crawler-ontology/FuncaoLocomocao_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.drone-crawler-ontology/SistemaPropulsaoSubmarino_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.drone-crawler-ontology/SistemaPropulsaoSubmarino_1">
+        <rdf:type rdf:resource="http://www.drone-crawler-ontology/SistemaDePropulsao"/>
+        <dco:hasComponent rdf:resource="http://www.drone-crawler-ontology/Camera_1"/>
+        <dco:hasComponent rdf:resource="http://www.drone-crawler-ontology/RodaSubmarino_1"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
